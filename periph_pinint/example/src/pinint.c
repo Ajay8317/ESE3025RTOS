@@ -60,7 +60,7 @@ while(1)
 	bool Button_State_1 = Chip_GPIO_GetPinState(LPC_GPIO, GPIO_INTERRUPT_PORT_A,
 			GPIO_INTERRUPT_PIN_A);
 
-	if (Button_State_1 == false) {
+	if (Button_State_1 == true) {
 		n=n-1000;
 		Board_LED_Set(2, false);
 		delay(n);
